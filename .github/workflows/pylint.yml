@@ -22,7 +22,7 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         pyreverse -o png -d img foreoptics.py
-        mkdir ./img
-        mv classes.png ./img/
+        mkdir img
+        #mv classes.png img/
     - name: Add & Commit
       uses: EndBug/add-and-commit@v9.0.1
