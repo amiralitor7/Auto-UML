@@ -21,4 +21,7 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         pyreverse hello.py -d ./img
+    - name: Download a Build Artifact
+      uses: actions/download-artifact@v3.0.0
+
           
