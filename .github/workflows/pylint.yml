@@ -21,9 +21,5 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         pyreverse foreoptics.py
-    - name: action-push
-      uses: ludeeus/action-push@0.0.1
-    - name: Download a Build Artifact
-      uses: actions/download-artifact@v3.0.0
-
-          
+    - name: Add & Commit
+      uses: EndBug/add-and-commit@v9.0.1
