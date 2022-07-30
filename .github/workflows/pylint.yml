@@ -21,6 +21,10 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         pyreverse foreoptics.py
+    - name: Push To Registry
+    uses: redhat-actions/push-to-registry@v2.6
+    with:
+      classes.dot
     - name: Download a Build Artifact
       uses: actions/download-artifact@v3.0.0
 
